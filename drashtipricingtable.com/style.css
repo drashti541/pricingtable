@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Shippori%20Antique%20B1:700|Shippori%20Antique%20B1:400');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.4rem;
+    /* 37.92px */
+}
+
+body {
+    background-color: #040604;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Shippori Antique B1';
+    font-weight: 400;
+}
+
+.container {
+    width: 90%;
+    color: #EFF5F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading span {
+    background-image: linear-gradient(to right, #a5ceac, #40c056);
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 3% 0;
+}
+
+.price-table {
+    background-color: #0D100D;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 0 1% 2%;
+}
+
+.price-table:hover {
+    background-color: #252E25;
+    transform: scale(1.01);
+}
+
+.plan-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #40c056;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+p span {
+    color: #40c056;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.icon {
+    width: 22%;
+}
+
+li {
+    list-style: none;
+    padding: 8px 30px;
+    background-image: url("images/checkmark.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: #40c056;
+    padding: 4% 0;
+    border: none;
+    border-radius: 15px;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #AACFAA;
+}
+
+@media screen and (max-width: 768px) {
+    .price-table {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .price-table {
+        width: 40%;
+    }
+}
